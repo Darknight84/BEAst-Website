@@ -5,6 +5,7 @@ body {
 
 .mother {}
 
+
 .header-top {
 	background: rgba(255, 255, 255, 0.54);
 	padding: 0.5em 0;
@@ -974,6 +975,7 @@ div#offices {
 	margin: 4% 0;
 }
 
+.partners-icons ul{ margin:0px }
 .partners-icons li {
 	display: inline-block;
 	margin-left: 40px;
@@ -1272,7 +1274,7 @@ form {
 	text-decoration: none;
 	position: fixed;
 	bottom: 45px;
-	right: 34%;
+	right: 5%;
 	overflow: hidden;
 	width: 42px;
 	height: 46px;
@@ -1610,7 +1612,7 @@ form {
 
 	#toTop {
 		bottom: 44px;
-		right: 21%;
+		right: 5%;
 	}
 }
 
@@ -1983,9 +1985,7 @@ form {
 		min-height: 332px;
 	}
 
-	li.man{
-		display: none;
-	}
+	
 
 	ul.contact-grids h5 {
 		display: none;
@@ -2189,10 +2189,6 @@ form {
 
 	.partners-icons li {
 		margin-left: 20px;
-	}
-
-	.partners-icons li.man {
-		display: none;
 	}
 	
 	li.box {
