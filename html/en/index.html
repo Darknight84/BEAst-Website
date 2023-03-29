@@ -9,6 +9,7 @@
 	<!-- Custom Theme files -->
 	<link href="../../css/style.css" rel='stylesheet' type='text/css' />
 	<link rel="stylesheet" type="text/css" href="../../css/component.css" />
+	<link href="../../css/flexslider.css" rel="stylesheet">
 	<!--Custom Theme files-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</script>
@@ -76,30 +77,56 @@
 	<div class="ss-style-bigtriangle ">
 		<div id="partners" class="Partners partners-section">
 			<div class="partners-grids">
-				<div class="partners-icons">
-					   <ul>
-						   <li class="man"><a href="#"><img src="../../images/partners/popsible.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/gft.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/alicloud.png" alt=""/></a></li>
-						   <li><a href="#"><img src="../../images/partners/aws.png" alt=""/></a></li>
-						   <li><a href="#"><img src="../../images/partners/cyberport.png" alt=""/></a></li>
-						   <li><a href="#"><img src="../../images/partners/deloitte.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/LIQL.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/fanolabs.png" alt=""/></a></li>
+				
+					<ul id="flexiselDemo1">
+						<li><a href="#"><img src="../../images/partners/popsible.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/gft.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/alicloud.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/aws.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/cyberport.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/deloitte.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/LIQL.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/fanolabs.png" alt=""/></a></li>
 
-						   <li><a href="#"><img src="../../images/partners/google cloud.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/RD tech.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/HKSTP.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/investHK.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/innoblock.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/leap.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/ms.png" alt=""/></a></li>
-						   <li class="man"><a href="#"><img src="../../images/partners/moxo.png" alt=""/></a></li>
-						   
-						   <div class="clearfix"> </div>
-					   </ul>
-				   </div>
-		   </div>
+						<li><a href="#"><img src="../../images/partners/google cloud.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/RD tech.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/HKSTP.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/investHK.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/innoblock.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/leap.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/ms.png" alt=""/></a></li>
+						<li><a href="#"><img src="../../images/partners/moxo.png" alt=""/></a></li>
+					</ul>
+				
+			</div>
+			<script type="text/javascript">
+				$(window).load(function() {
+				   $("#flexiselDemo1").flexisel({
+					   visibleItems: 6,
+					   animationSpeed: 1000,
+					   autoPlay: true,
+					   autoPlaySpeed: 3000,    		
+					   pauseOnHover: true,
+					   enableResponsiveBreakpoints: true,
+					   responsiveBreakpoints: { 
+						   portrait: { 
+							   changePoint:480,
+							   visibleItems: 1
+						   }, 
+						   landscape: { 
+							   changePoint:640,
+							   visibleItems: 2
+						   },
+						   tablet: { 
+							   changePoint:768,
+							   visibleItems: 3
+						   }
+					   }
+				   });
+				   
+			   });
+			  </script>
+			  <script type="text/javascript" src="../../js/jquery.flexisel.js"></script>
 		</div>
 	</div>
 	<!--/End-banner-->
