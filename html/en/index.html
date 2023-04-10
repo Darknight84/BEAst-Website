@@ -7,9 +7,15 @@
 	<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
 	<script src="../../js/jquery.min.js"></script>
 	<!-- Custom Theme files -->
+	<link href="../../css/horizontal.css" rel="stylesheet" />
 	<link href="../../css/style.css" rel='stylesheet' type='text/css' />
-	<link rel="stylesheet" type="text/css" href="../../css/component.css" />
-	<link href="../../css/flexslider.css" rel="stylesheet">
+	<link href="../../css/component.css" rel="stylesheet" type="text/css"  />
+	<link href="../../css/flexslider.css" rel="stylesheet" type="text/css" />
+	<link href="../../css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="../../js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
 	<!--Custom Theme files-->
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	</script>
@@ -17,7 +23,8 @@
 	<!--start-smoth-scrolling-->
 	<script type="text/javascript" src="../../js/move-top.js"></script>
 	<script type="text/javascript" src="../../js/easing.js"></script>
-
+	<script type="text/javascript" src="../../js/slidertv/sliderTV.js"></script>
+    <script type="text/javascript" src="../../js/slidertv/horizontal.js"></script>
 	<script type="text/javascript">
 		jQuery(document).ready(function ($) {
 			$(".scroll").click(function (event) {
@@ -33,7 +40,7 @@
 <body>
 	<!--header-->
 	<div class="header">
-		<div class="header-top">
+		<div class="header-top wow bounceInDown" data-wow-delay="0.2s">
 			<div class="container">
 				<div class="logo">
 					<a href="index.html"><img src="../../images/logo.png" /></a>
@@ -44,9 +51,9 @@
 					<ul>
 						<li class="active"><a href="#home" class="scroll">Home </a></li>
 						<li><a href="#partners" class="scroll">Partners</a></li>
+						<li><a href="#news" class="scroll">News</a></li>
 						<li><a href="#stories" class="scroll">Successful Stories</a></li>
-						<li><a href="#news_events" class="scroll">News & Events</a></li>
-						<li><a href="#opinions" class="scroll">Opinions</a></li>
+						<li><a href="#events" class="scroll">Events</a></li>
 						<li><a href="#contact" class="scroll">Contact Us</a></li>
 						<div class="clearfix"> </div>
 					</ul>
@@ -67,72 +74,254 @@
 		<!--banner-->
 		<div class="banner">
 			<div class="container">
-				<div class="banner-info">
-					<h1>WELCOME</h1>
-					<h2>BEAst</h2>
+				<div class="banner-info">&nbsp;</div>
+			</div>
+		</div>
+		<!--/End-banner-->
+	</div>
+
+	<div class="clearfix"></div>
+	<!--partners-->
+	<div id="partners" class="partners-section " >
+		<div class="partners-grids wow fadeInDown" data-wow-delay="0.4s">
+			<ul id="flexiselDemo1">
+				<li><a href="#"><img src="../../images/partners/popsible.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/gft.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/alicloud.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/aws.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/cyberport.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/deloitte.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/LIQL.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/fanolabs.png" alt=""/></a></li>
+
+				<li><a href="#"><img src="../../images/partners/google cloud.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/RD tech.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/HKSTP.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/investHK.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/innoblock.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/leap.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/ms.png" alt=""/></a></li>
+				<li><a href="#"><img src="../../images/partners/moxo.png" alt=""/></a></li>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			$(window).load(function() {
+				$("#flexiselDemo1").flexisel({
+					visibleItems: 6,
+					animationSpeed: 1000,
+					autoPlay: true,
+					autoPlaySpeed: 3000,    		
+					pauseOnHover: true,
+					enableResponsiveBreakpoints: true,
+					responsiveBreakpoints: { 
+						portrait: { 
+							changePoint:480,
+							visibleItems: 1
+						}, 
+						landscape: { 
+							changePoint:640,
+							visibleItems: 2
+						},
+						tablet: { 
+							changePoint:768,
+							visibleItems: 3
+						}
+					}
+				});
+				
+			});
+			</script>
+			<script type="text/javascript" src="../../js/jquery.flexisel.js"></script>
+	</div>
+	<!--End-partners-->
+
+	<div class="content">
+		<div class="clearfix"> </div>
+		<!--news-->
+		<div id="news" class="news-section">
+			<div class="news-head text-center">
+				<div class="news-line">&nbsp;</div>
+			</div>
+			<div class="news-grids section group wow bounceIn" data-wow-delay="0.4s">
+				<div class="grid_1_of_2 news-main">
+					<div class="news-img">
+						<img src="../../images/news/1.png" alt="" />
+					</div>
+					<div class="news-desc">
+						London, UK — 02 February 2023 – Zodia Custody Limited (“Zodia Custody”), a leading crypto asset servicing provider for institutional investors and a subsidiary of Standard Chartered, and SBI Digital Asset Holdings Co., Ltd. (“SBI DAH”) announce that they have entered into definitive agreements to launch a joint… venture in Japan.
+					</div>
+				</div>
+				<div class="grid_1_of_2 news-nav wow bounceIn" data-wow-delay="0.4s">
+					<div class="news-nav-item">
+						<div class="news-item-img">
+							<img src="../../images/news/2.png"/>
+						</div>
+						<div class="new-item-desc">
+							“HKICT Award 2020 – Fintech Winners’ Sharing Series”- Fintech sharing by FANOLabs
+						</div>
+					</div>
+					<div class="news-nav-item">
+						<div class="news-item-img">
+							<img src="../../images/news/3.png"/>
+						</div>
+						<div class="new-item-desc">
+							BEA Bank: Digital Hong Kong Dollars may be used in the Bay Area
+						</div>
+					</div>
+					<div class="news-nav-item">
+						<div class="news-item-img">
+							<img src="../../images/news/4.png"/>
+						</div>
+						<div class="new-item-desc">
+							BEA Bank: Digital Hong Kong Dollars may be used in the Bay Area
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End-news-->
+
+		<div class="clearfix"> </div>
+		<!--stories-->
+		<div id="stories" class="stories-section">
+			<div class="stories-head text-center">
+				<div class="stories-line">&nbsp;</div>
+			</div>
+			<div class="stories-grids section group">
+				<div class="grid_1_of_3 stories-grid wow bounceIn" data-wow-delay="0.4s">
+					<div class="stories-img">
+						<img src="../../images/stories/1.png" alt="" />
+					</div>
+					<div class="stories-desc">							 
+						Autumn partners with dacadoo to help customers make healthier lifestyle choices to reduce their financial burdens in the future
+					</div>
+					<div class="stories-date">2022-03-30</div>
+				</div>
+				<div class="grid_1_of_3 stories-grid wow bounceIn" data-wow-delay="0.4s">
+					<div class="stories-img">
+						<img src="../../images/stories/2.png" alt="" />
+					</div>
+					<div class="stories-desc">							 
+						Zai – merger creates a new force in financial services
+					</div>
+					<div class="stories-date">2022-03-30</div>
+				</div>
+				<div class="grid_1_of_3 stories-grid wow bounceIn" data-wow-delay="0.4s">
+					<div class="stories-img">
+						<img src="../../images/stories/3.png" alt="" />
+					</div>
+					<div class="stories-desc">							 
+						We’ll be at this year’s Hong Kong FinTech Week on 3 – 5 Nov!
+					</div>
+					<div class="stories-date">2022-03-30</div>
+				</div>
+			</div>
+		</div>
+		<!--End-stories-->
+
+		<div class="clearfix"> </div>
+		<!--events-->
+		<div id="events" class="events-section">
+			<div class="events-head text-center">
+				<div class="events-line">&nbsp;</div>
+			</div>
+			<div class="events-wrapper wow bounceIn" data-wow-delay="0.4s" >
+				<!-- sliderTV html-->
+				<div id="sliderTV" class="sliderTV">
+					<!-- slidable items in carousel -->
+					<div id="item-0" class="sliderTV__item">
+						<div class="sliderTV__container">
+							<div class="events-img">
+								<img src="../../images/events/1.png" alt="" />
+							</div>
+							<div class="events-title">							 
+								Lecture Series by Chinese Academy of Sciences (CAS)
+							</div>
+							<div class="events-date">
+								<p>Date: 19 Apr 2023 - 20 Apr 2023</p>
+								<p>Time: 5:30 p.m. - 6:30 p.m.</p>
+							</div>
+						</div>
+					</div>
+					<div id="item-1" class="sliderTV__item">
+						<div class="sliderTV__container">
+							<div class="events-img">
+								<img src="../../images/events/2.png" alt="" />
+							</div>
+							<div class="events-title">							 
+								APRU Undergraduate Leaders’ Programme 2023: Leadership for Sustainable Cities Development
+							</div>
+							<div class="events-date">
+								<p>Date: 19 Apr 2023 - 20 Apr 2023</p>
+								<p>Time: 5:30 p.m. - 6:30 p.m.</p>
+							</div>
+						</div>
+					</div>
+					<div id="item-2" class="sliderTV__item">
+						<div class="sliderTV__container">
+							<div class="events-img">
+								<img src="../../images/events/3.png" alt="" />
+							</div>
+							<div class="events-title">							 
+								A suite of financial products with low investment thresholds for you to choose.
+							</div>
+							<div class="events-date">
+								<p>Date: 19 Apr 2023 - 20 Apr 2023</p>
+								<p>Time: 5:30 p.m. - 6:30 p.m.</p>
+							</div>
+						</div>
+					</div>
+					<div id="item-3" class="sliderTV__item">
+						<div class="sliderTV__container">
+							<div class="events-img">
+								<img src="../../images/events/4.png" alt="" />
+							</div>
+							<div class="events-title">							 
+								BEA GOAL -- Together with the BEA App
+							</div>
+							<div class="events-date">
+								<p>Date: 19 Apr 2023 - 20 Apr 2023</p>
+								<p>Time: 5:30 p.m. - 6:30 p.m.</p>
+							</div>
+						</div>
+					</div>
+					<!-- optional navigational arrows -->
+					<div class="sliderTV__prev">
+						<img src="../../images/left.png" alt="" width="40px" height="40px"/>
+					</div>
+                	<div class="sliderTV__next">
+						<img src="../../images/right.png" alt="" width="40px" height="40px"/>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End-events-->
+
+		<div class="clearfix"> </div>
+		<!-- Hall of Frame-->
+		<div id="hallOfFrame" class="frame-section">
+			<div class="frame-head text-center">
+				<div class="frame-line">&nbsp;</div>
+			</div>
+			<div class="frame-wrapper wow bounceIn" data-wow-delay="0.4s">
+				<div class="frame-role text-center">
+					<p style="padding: 5px;"><img src="../../images/frame/Stephen.png" alt="" /></p>
+					<p style="font-weight: bolder;">Stephen Leung</p>
+					<p>Head of IT Department & Fintech Development </p>
+				</div>
+				<div class="frame-desc">
+					Liang Zhao En said that at present, six projects have been completed and launched, which are mainly background operations such as blockchain, cloud technology and network security. Seven of them are in the proof-of-concept "POC" stage, and another 10 have passed the POC and are ready to be launched on the market.
+					<br/>In recent years, the banking industry has been actively cooperating with start-ups in the development of fintech. Bank of East Asia (0023) held a media briefing yesterday on its Fintech project. Mr Leung Siu En, Head of IT Department and Fintech Development Department of the...
 				</div>
 			</div>
 		</div>
 	</div>
-	<div class="ss-style-bigtriangle ">
-		<div id="partners" class="Partners partners-section">
-			<div class="partners-grids">
-				
-					<ul id="flexiselDemo1">
-						<li><a href="#"><img src="../../images/partners/popsible.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/gft.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/alicloud.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/aws.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/cyberport.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/deloitte.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/LIQL.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/fanolabs.png" alt=""/></a></li>
 
-						<li><a href="#"><img src="../../images/partners/google cloud.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/RD tech.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/HKSTP.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/investHK.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/innoblock.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/leap.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/ms.png" alt=""/></a></li>
-						<li><a href="#"><img src="../../images/partners/moxo.png" alt=""/></a></li>
-					</ul>
-				
-			</div>
-			<script type="text/javascript">
-				$(window).load(function() {
-				   $("#flexiselDemo1").flexisel({
-					   visibleItems: 6,
-					   animationSpeed: 1000,
-					   autoPlay: true,
-					   autoPlaySpeed: 3000,    		
-					   pauseOnHover: true,
-					   enableResponsiveBreakpoints: true,
-					   responsiveBreakpoints: { 
-						   portrait: { 
-							   changePoint:480,
-							   visibleItems: 1
-						   }, 
-						   landscape: { 
-							   changePoint:640,
-							   visibleItems: 2
-						   },
-						   tablet: { 
-							   changePoint:768,
-							   visibleItems: 3
-						   }
-					   }
-				   });
-				   
-			   });
-			  </script>
-			  <script type="text/javascript" src="../../js/jquery.flexisel.js"></script>
-		</div>
-	</div>
-	<!--/End-banner-->
-
-	<!----- /start-footer---->
+	<!-----footer---->
 	<div class="footer">
+		<div class="footer-dividing text-center">
+			<div class="footer-dividing-line">&nbsp;</div>
+		</div>
 		<div class="container">
 			<div class="foter-bottom">
 				<div class="copy-right">
@@ -143,8 +332,8 @@
 			</div>
 		</div>
 	</div>
-	<!----- //End-footer---->
-	<!----- //End-footer---->
+	<!--End-footer-->
+
 	<script type="text/javascript">
 		$(document).ready(function () {
 			/*
@@ -162,5 +351,5 @@
 	</script>
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>
 </body>
-
+<script type="text/javascript" src="../../js/menu.js"></script>
 </html>
