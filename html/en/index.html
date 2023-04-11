@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Home</title>
+	<title>BEAst Home Page</title>
 	<link href="../../css/bootstrap.css" rel='stylesheet' type='text/css' />
 	<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
 	<script src="../../js/jquery.min.js"></script>
@@ -71,13 +71,6 @@
 				<div class="clearfix"> </div>
 			</div>
 		</div>
-		<!--banner-->
-		<div class="banner">
-			<div class="container">
-				<div class="banner-info">&nbsp;</div>
-			</div>
-		</div>
-		<!--/End-banner-->
 	</div>
 
 	<div class="clearfix"></div>
@@ -108,10 +101,11 @@
 			$(window).load(function() {
 				$("#flexiselDemo1").flexisel({
 					visibleItems: 6,
-					animationSpeed: 1000,
+					animationSpeed: 3000,
 					autoPlay: true,
-					autoPlaySpeed: 3000,    		
-					pauseOnHover: true,
+					autoPlaySpeed: 0,    		
+					pauseOnHover: false,
+					clone:true,
 					enableResponsiveBreakpoints: true,
 					responsiveBreakpoints: { 
 						portrait: { 
@@ -130,10 +124,19 @@
 				});
 				
 			});
-			</script>
-			<script type="text/javascript" src="../../js/jquery.flexisel.js"></script>
+		</script>
+		<script type="text/javascript" src="../../js/jquery.flexisel.js"></script>
+		<div class="clearfix"> </div>
+	<!--banner-->
+	<div class="banner">
+		<div class="banner-info">
+			<h1>This is a Test</h1>
+		</div>
+	</div>
 	</div>
 	<!--End-partners-->
+
+	
 
 	<div class="content">
 		<div class="clearfix"> </div>
@@ -141,7 +144,7 @@
 		<div id="news" class="news-section">
 			<div class="news-head text-center">
 				<div class="news-line">&nbsp;</div>
-			</div>
+			</div>	
 			<div class="news-grids section group wow bounceIn" data-wow-delay="0.4s">
 				<div class="grid_1_of_2 news-main">
 					<div class="news-img">
