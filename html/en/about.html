@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BEAst Home Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+	<script src="../../js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+	<link href="../../css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="../../js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!--Custom Theme files-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--start-smoth-scrolling-->
+	<script type="text/javascript" src="../../js/move-top.js"></script>
+	<script type="text/javascript" src="../../js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!--start-smoth-scrolling-->
+
+</head>
+
+<body>
+	<!--header-->
+	<div class="header header-inner">
+		<div class="header-top wow bounceInDown" data-wow-delay="0.2s">
+			<div class="container">
+				<div class="logo">
+					<a href="./index.html"><img src="../../images/logo.png" /></a>
+				</div>
+				<!--top-nav-->
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li class="active"><a href="./about.html">About</a></li>
+						<li><a href="./partners.html">Partners</a></li>
+						<li><a href="./news.html">News & Events</a></li>
+						<!--<li><a href="#stories" class="scroll">Successful Stories</a></li>
+						<li><a href="#events" class="scroll">Events</a></li> -->
+						<li><a href="./contact_us.html">Contact Us</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- script-for-menu -->
+				<script>
+					$(document).ready(function () {
+						$("span.menu").click(function () {
+							$(".top-nav ul").slideToggle(200);
+						});
+					});
+				</script>
+				<!--End-top-nav-script-->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+    <div class="content">
+		<div class="clearfix"> </div>
+        <div class="top-line text-center">&nbsp;</div>
+
+        <div class="clearfix"> </div>
+        <!-- News -->
+        <div class="news-grids section group wow bounceIn" data-wow-delay="0.4s">
+            <div class="grid_1_of_2">
+                <div class="news-img">
+                    <img src="../../images/news/1.png" alt="" />
+                </div>
+            </div>
+            <div class="grid_1_of_2 wow bounceIn" data-wow-delay="0.4s">
+                <div class="news-desc">
+                    Liang Zhao En said that at present, six projects have been completed and launched, which are mainly background operations such as blockchain, cloud technology and network security. Seven of them are in the proof-of-concept "POC" stage, and another 10 have passed the POC and are ready to be launched on the market.
+                    In recent years, the banking industry has been actively cooperating with start-ups in the development of fintech. Bank of East Asia (0023) held a media briefing yesterday on its Fintech project. Mr Leung Siu En, Head of IT Department and Fintech Development Department of the...
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----footer---->
+	<div class="footer">
+		<div class="footer-line text-center">&nbsp;</div>
+		<div class="container">
+			<div class="foter-bottom">
+				<div class="copy-right">
+					<p>Copyright &copy; 2022-2023.</p>
+					<p>BEAST All rights reserved.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--End-footer-->
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>    
+</body>
+<script type="text/javascript" src="../../js/menu.js"></script>
+</html>

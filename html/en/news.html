@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>BEAst Home Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" />
+	<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
+	<script src="../../js/jquery.min.js"></script>
+	<!-- Custom Theme files -->
+	<link href="../../css/style.css" rel="stylesheet" type="text/css" />
+	<link href="../../css/animate.css" rel="stylesheet" type="text/css" media="all" />
+	<script src="../../js/wow.min.js"></script>
+	<script>
+		new WOW().init();
+	</script>
+	<!--Custom Theme files-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!--start-smoth-scrolling-->
+	<script type="text/javascript" src="../../js/move-top.js"></script>
+	<script type="text/javascript" src="../../js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({ scrollTop: $(this.hash).offset().top }, 1000);
+			});
+		});
+	</script>
+	<!--start-smoth-scrolling-->
+    <style rel='stylesheet' type='text/css'>
+        .top-tags{
+            padding-top:20px;
+        }
+        .top-tags ul {
+            margin: 0;
+            padding: 0;
+        }
+
+        .top-tags ul li {
+            display: inline;
+            margin-left: 40px;
+        }
+
+        .top-tags ul li button{
+            background: url(../../images/inaction.png) 100% 100% no-repeat;
+            border: 0px;
+            color: #FFF;
+            font-weight: bolder;
+            font-size: 1.5em;
+            width: 150px;
+            height: 100px;
+            padding-top:35px;
+        }
+
+        .top-tags ul li.action button{
+            background: url(../../images/action.png) 100% 100% no-repeat;
+        }
+		
+		.news-nav {
+			margin: 0px;
+			padding: 0px;
+			background-image: none;
+		}
+		.news-nav .news-nav-item {
+			margin: 5px;
+			padding: 30px;
+			width: 100%;
+			background-image: linear-gradient(to left,#FFD100 0%, #FF9E1A 31%, #ED171F 66%,#A6192E 100%);
+			
+		}
+
+		.news-nav .news-nav-item .news-item-img{
+			width: 30%;
+			max-width: 350px;
+		}
+
+		.news-nav .news-nav-item .new-item-desc{
+			width: 70%;
+			float: left;
+		}
+
+    </style>
+</head>
+
+<body>
+	<!--header-->
+	<div class="header header-inner">
+		<div class="header-top wow bounceInDown" data-wow-delay="0.2s">
+			<div class="container">
+				<div class="logo">
+					<a href="./index.html"><img src="../../images/logo.png" /></a>
+				</div>
+				<!--top-nav-->
+				<div class="top-nav">
+					<span class="menu"> </span>
+					<ul>
+						<li><a href="./about.html">About</a></li>
+						<li><a href="./partners.html">Partners</a></li>
+						<li class="active"><a href="#">News & Events</a></li>
+						<!--<li><a href="#stories" class="scroll">Successful Stories</a></li>
+						<li><a href="#events" class="scroll">Events</a></li> -->
+						<li><a href="./contact_us.html">Contact Us</a></li>
+						<div class="clearfix"> </div>
+					</ul>
+				</div>
+				<div class="clearfix"> </div>
+				<!-- script-for-menu -->
+				<script>
+					$(document).ready(function () {
+						$("span.menu").click(function () {
+							$(".top-nav ul").slideToggle(200);
+						});
+					});
+				</script>
+				<!--End-top-nav-script-->
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+
+    <div class="content">
+		<div class="clearfix"> </div>
+        <div class="top-line2 text-center">
+            <div class="top-tags">
+                <ul>
+                    <li class="action">
+                        <a href="./news.html"><button>News</button></a>
+                    </li>
+                    <li>
+                        <a href="./events.html"><button>Events</button></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="clearfix"> </div>
+        <div class="news-grids section group wow bounceIn" data-wow-delay="0.4s">
+			<div class="news-nav wow bounceIn" data-wow-delay="0.4s">
+				<div class="news-nav-item">
+					<div class="news-item-img">
+						<img src="../../images/news/2.png"/>
+					</div>
+					<div class="new-item-desc">
+						[2023-04-11] “HKICT Award 2020 – Fintech Winners’ Sharing Series”- Fintech sharing by FANOLabs
+					</div>
+				</div>
+				<div class="news-nav-item">
+					<div class="news-item-img">
+						<img src="../../images/news/3.png"/>
+					</div>
+					<div class="new-item-desc">
+						[2023-04-11] BEA Bank: Digital Hong Kong Dollars may be used in the Bay Area
+					</div>
+				</div>
+				<div class="news-nav-item">
+					<div class="news-item-img">
+						<img src="../../images/news/4.png"/>
+					</div>
+					<div class="new-item-desc">
+						[2023-04-11] BEA Bank: Digital Hong Kong Dollars may be used in the Bay Area
+					</div>
+				</div>
+			</div>
+		</div>
+    </div>
+
+    <!-----footer---->
+	<div class="footer">
+		<div class="footer-line text-center">&nbsp;</div>
+		<div class="container">
+			<div class="foter-bottom">
+				<div class="copy-right">
+					<p>Copyright &copy; 2022-2023.</p>
+					<p>BEAST All rights reserved.</p>
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+		</div>
+	</div>
+	<!--End-footer-->
+
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+			var defaults = {
+					containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear' 
+				};
+			*/
+
+			$().UItoTop({ easingType: 'easeOutQuart' });
+
+		});
+	</script>
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>    
+</body>
+<script type="text/javascript" src="../../js/menu.js"></script>
+</html>
