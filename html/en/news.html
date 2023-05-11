@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>BEAst Home Page</title>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- meta-data -->
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta http-equiv="Expires" content="-1">
+	<meta name="viewport" content="target-densitydpi=device-dpi, width=1024" />
+	<meta name="description" content="Incorporated in Hong Kong in 1918, The Bank of East Asia, Limited (&quot;BEA&quot;) is dedicated to providing comprehensive corporate banking, personal banking, wealth management, and investment services to its customers in Hong Kong, Mainland China, and other major markets around the world." />
+	<meta name="keywords" content="bea,bank of east asia,Cyberbanking,BEA online banking,BEA e-banking,BEA ebanking,BEA Internet Banking,BEA Personal Internet Banking,BEA Personal e-Banking,BEA online banking login,BEA e-banking login,BEA ebanking login,BEA Internet Banking login,BEA Personal Internet Banking login,BEA Personal e-Banking login,BEA Mobile banking,Online bill payment,Online account service,i-Planner,iplanner,travel planner,i-Spend,ispend,e-statement,credit card e-statement,i-P2P,iP2P,P2P,P2P transfer money" />
+	<meta content="IE=edge" http-equiv="X-UA-Compatible" />
+	<!-- End meta-data -->
 
+	<title>BEAst Home Page</title>
 	<link href="../../css/bootstrap.css" rel="stylesheet" type="text/css" />
 	<!--jQuery (necessary for Bootstrap's JavaScript plugins)-->
 	<script src="../../js/jquery.min.js"></script>
@@ -78,9 +84,17 @@
 			max-width: 350px;
 		}
 
-		.news-nav .news-nav-item .new-item-desc{
+		.news-nav .news-nav-item .news-item-desc{
 			width: 70%;
 			float: left;
+		}
+
+		.news-nav .news-nav-item .news-item-desc p{
+			font-weight: normal;
+		}
+
+		.news-nav .news-nav-item .news-item-desc p a{
+			color: #FFF;
 		}
 
     </style>
@@ -118,14 +132,15 @@
 					<span class="menu"> </span>
 					<ul>
 						<li><a href="./about.html">About</a></li>
-						<li><a href="./partners.html">Partners</a></li>
-						<li class="active"><a href="#">News & Events</a></li>
+						<li><a href="./partners.html">Partnership</a></li>
+						<li class="active"><a href="./news.html">News & Events</a></li>
 						<!--<li><a href="#stories" class="scroll">Successful Stories</a></li>
-						<li><a href="#events" class="scroll">Events</a></li> -->
+						<li><a href="#events" class="scroll">Events</a></li>-->
 						<li><a href="./contact_us.html">Contact Us</a></li>
 						<div class="clearfix"> </div>
 					</ul>
 				</div>
+				<!--End top-nav-->
 				<div class="clearfix"> </div>
 				<!-- script-for-menu -->
 				<script>
@@ -161,26 +176,40 @@
 			<div class="news-nav wow bounceIn" data-wow-delay="0.4s">
 				<div class="news-nav-item">
 					<div class="news-item-img">
-						<img src="../../images/news/2.png"/>
+						<img src="../../images/news/20220921_BEAST Open Day.png"/>
 					</div>
-					<div class="new-item-desc">
-						[2023-04-11] “HKICT Award 2020 – Fintech Winners’ Sharing Series”- Fintech sharing by FANOLabs
-					</div>
-				</div>
-				<div class="news-nav-item">
-					<div class="news-item-img">
-						<img src="../../images/news/3.png"/>
-					</div>
-					<div class="new-item-desc">
-						[2023-04-11] BEA Bank: Digital Hong Kong Dollars may be used in the Bay Area
+					<div class="news-item-desc">
+						<p>[21 September 2022]</p> 
+						<p><b>BEA</b>ST brings together BEA + Startups</p>
+						<p>A platform that inspires innovative co-creations and collaborations</p>
+						<p>(link: <a href="https://www.hkbea.com/pdf/en/about-bea/new-release/2022/20220921en.pdf">https://www.hkbea.com/pdf/en/about-bea/new-release/2022/20220921en.pdf</a>) </p>
 					</div>
 				</div>
 				<div class="news-nav-item">
 					<div class="news-item-img">
-						<img src="../../images/news/4.png"/>
+						<img src="../../images/news/20221103_Cyberreport FinTech Transformation Award 2.png"/>
 					</div>
-					<div class="new-item-desc">
-						[2023-04-11] BEA Bank: Digital Hong Kong Dollars may be used in the Bay Area
+					<div class="news-item-desc">
+						<p>[3 November 2023]</p> 
+						<p>Cyberport Fintech Transformation Award</p> 
+					</div>
+				</div>
+				<div class="news-nav-item">
+					<div class="news-item-img">
+						<img src="../../images/news/20230118_Etnet FinTech Award.png">
+					</div>
+					<div class="news-item-desc">
+						<p>[18 January 2023]</p> 
+						<p><b>BEA</b>ST Wins at The FinTech Awards 2022</p>
+					</div>
+				</div>
+				<div class="news-nav-item">
+					<div class="news-item-img">
+						<img src="../../images/news/20230612_HKMA_HKT Global innovation Award.png">
+					</div>
+					<div class="news-item-desc">
+						<p>[12 June 2023 ]</p> 
+						<p><b>BEA</b>ST Wins at HKMA / HKT Global Innovation Award</p>
 					</div>
 				</div>
 			</div>
@@ -204,15 +233,6 @@
 
 	<script type="text/javascript">
 		$(document).ready(function () {
-			/*
-			var defaults = {
-					containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
 		});
