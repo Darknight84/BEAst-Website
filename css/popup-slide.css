@@ -68,7 +68,7 @@
 
 .employee__portrait {
     -webkit-tap-highlight-color: transparent;
-    background: none;
+    background: #ececec;
     border: 0;
     color: #eb3f43;
     cursor: pointer;
