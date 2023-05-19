@@ -94,7 +94,6 @@ span.menu {
 	font-family: 'Lato', sans-serif;
 }
 
-
 .top-nav ul li.active a span {
 	background: #e74c3c;
 	width: 100%;
@@ -138,7 +137,7 @@ span.menu {
 	border: 1px solid #EEE;
 	border-radius: 10px;
 	padding:0px 10px;
-	margin:0px 2px;
+	margin-right: 10px;
 }
 .tag_award{
 	background-color: #FF9E1A;
@@ -405,6 +404,13 @@ span.menu {
 
 .news-main{
 	padding-top: 50px;
+}
+.news-img{
+	border: 1px solid #EEE;
+	border-radius:5px;
+	-webkit-border-radius:5px;
+	-moz-border-radius:5px;
+	-o-border-radius:5px;
 }
 .news-img img {
 	max-width:100%;
@@ -722,10 +728,8 @@ span.menu {
     border-color: #e7e3de;
 }
 
-
-.FAQ-section .FAQ-image{
-	border-top: 2px solid #ED171F;
-	border-bottom: 2px solid #ED171F;
+.FAQ-section .FAQ-image img{
+	width: 100%;
 }
 
 .FAQ-section .FAQ-content-item{
@@ -752,6 +756,9 @@ img.exp-button{
 
 }
 
+.article_section h1{
+	font-size:3.0em;
+}
 .article_content{
 	width: 100%;
 	padding:10px 100px;
@@ -763,10 +770,11 @@ img.exp-button{
 	width:80%;
 }
 .article_date{
-	font-size: 1.5em;
+	font-size: 2.0em;
 }
 .article_content p{
-	font-size: 1.2em;
+	font-size: 1.8em;
+	line-height: 1.3em;
 	font-family: 'Open Sans', sans-serif;
 	text-align: left;
 }
@@ -834,6 +842,12 @@ img.exp-button{
 	opacity: 0;
 	-moz-opacity: 0;
 	filter: alpha(opacity=0);
+}
+
+#getInTouch img{
+	margin-top:20px;
+	width:96px;
+	height:96px;
 }
 
 /*---- responsive-design -----*/

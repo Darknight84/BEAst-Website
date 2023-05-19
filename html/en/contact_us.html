@@ -45,7 +45,11 @@
             display: none;
         }
 		.contact-form-section{
-			padding:30px 15px;
+			box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.07);
+    		transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+    		padding: 35px 50px 40px 50px;
+			border-radius: 5px 5px 5px 5px;
+			border:1px solid #EEE;
 		}
 		.ui-widget-overlay{
 			opacity: 0.5;
@@ -124,88 +128,82 @@
 
     <div class="content">
 		<div class="clearfix"> </div>
-        <div class="top-line text-center">&nbsp;</div>
-
-        <div class="clearfix"> </div>
-        <div class="location-grids wow bounceIn" data-wow-delay="0.4s">
-            <div class="location-img">
-                <img src="../../images/map.png" alt="mc5"/>
-            </div>
+		<div class="top-line text-center">&nbsp;</div>
+		
+		<div class="location-grids wow bounceIn" data-wow-delay="0.4s">
+			<div class="grid_1_of_2">
+				<div class="location-img">
+					<img src="../../images/map.png" alt="mc5"/>
+				</div>
+			</div>
+			<div class="grid_1_of_2">
+				<div class="contact-form-section container" style="width:100%">
+					<div class="row">
+						<div class="grid_1_of_2">
+							<p><b>Name</b></p>
+							<p><input type="text" class="form-control" placeholder="Name"></p>
+						</div>
+						<div class="grid_1_of_2">
+							<p><b>Company</b></p>
+							<p><input type="text" class="form-control" placeholder="Company"></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid_1_of_2">
+							<p><b>Email Address</b></p>
+							<p><input type="text" class="form-control" placeholder="Email Address"></p>
+						</div>
+						<div class="grid_1_of_2">
+							<p><b>Role</b></p>
+							<p><input type="text" class="form-control" placeholder="Role"></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid_1_of_2">
+							<p><b>Area of Interest</b></p>
+							<p>
+								<select id="selInterest" class="form-control">
+									<option>-- Please choose an option --</option>
+									<option value="job">Job opportunity</option>
+									<option value="internship">Internship</option>
+									<option value="partnership">Partnership</option>
+									<option value="visit to BEAst">Visit to BEAST</option>
+									<option value="other">Other</option>
+								</select>
+							</p>
+						</div>
+						<div class="grid_1_of_2 option">
+							<p><b>Please fill in</b></p>
+							<p><input type="text" class="form-control" placeholder="Please fill in"></p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid_1_of_1">
+							<p><b>Leave a message</b></p>
+							<p>
+								<textarea class="form-control" rows="10" placeholder="Leave a message"></textarea>
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid_1_of_1">
+							<p>
+								<input type="checkbox"/> *View <b>BEA</b>ST's Privacy Policy and Personal Information Collection Statement
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="grid_1_of_2">
+							<p>
+								<button id="btn_submit" class="form-control" style="width:25%">Submit</button>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
         </div>
-
-		<div class="contact-form-section container" style="width:100%">
-			<div class="row">
-				<div class="grid_1_of_2">
-					<p><b>FirstName:</b></p>
-					<p><input type="text" class="form-control" placeholder="Username"></p>
-				</div>
-				<div class="grid_1_of_2">
-					<p><b>Company:</b></p>
-					<p><input type="text" class="form-control" placeholder="Company"></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="grid_1_of_2">
-					<p><b>Email Address:</b></p>
-					<p><input type="text" class="form-control" placeholder="Username"></p>
-				</div>
-				<div class="grid_1_of_2">
-					<p><b>Role:</b></p>
-					<p><input type="text" class="form-control" placeholder="Company"></p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="grid_1_of_2">
-					<p><b>Area of Interest: </b></p>
-					<p>
-						<select class="form-control">
-							<option>option1</option>
-							<option>option2</option>
-							<option>option3</option>
-							<option>option4</option>
-						</select>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<p class="form-option"><u>*Please choose an option</u> <img class="exp-button" src="../../images/partners/expansion.png" alt="exp"/></p>
-			</div>
-			<div class="row option">
-				<div class="grid_1_of_2">
-					<p><b>Job opportunity:</b></p>
-					<p><input type="text" class="form-control" placeholder="Job opportunity"></p>
-				</div>
-				<div class="grid_1_of_2">
-					<p><b>Internship:</b></p>
-					<p><input type="text" class="form-control" placeholder="Internship"></p>
-				</div>
-			</div>
-			<div class="row option">
-				<div class="grid_1_of_2">
-					<p><b>Partnership:</b></p>
-					<p><input type="text" class="form-control" placeholder="Partnership"></p>
-				</div>
-				<div class="grid_1_of_2">
-					<p><b>Visit to BEAST:</b></p>
-					<p><input type="text" class="form-control" placeholder="Visit to BEAST"></p>
-				</div>
-			</div>
-			<div class="row option">
-				<div class="grid_1_of_2">
-					<p><b>Other:</b></p>
-					<p>
-						<textarea class="form-control" rows="10" placeholder="Other"></textarea>
-					</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="grid_1_of_2">
-					<button id="btn_submit" class="form-control" style="width:25%">Submit</button>
-				</div>
-			</div>
-		</div>
     </div>
-
+	<div class="clearfix"> </div>
     <!-----footer---->
 	<div class="footer">
 		<div class="footer-line text-center">&nbsp;</div>
@@ -233,16 +231,11 @@
 		$(document).ready(function () {
 			$().UItoTop({ easingType: 'easeOutQuart' });
 
-			$(".form-option img").click(function(){
-				var alt = $(this).attr('alt');
-				if(alt=='exp' || alt==""){
-					$(this).attr('alt', 'con');
-					$(this).attr('src', '../../images/partners/contraction.png');
-				}else{
-					$(this).attr('alt', 'exp');
-					$(this).attr('src', '../../images/partners/expansion.png');
-				}
-				$(".option").slideToggle();
+			$('#selInterest').change(function () {
+				if($(this).val()=='other')
+					$(".option").show();
+				else
+					$(".option").hide();
 			});
 
 			$('#my_dialog').dialog({  //创建dialog，并设置为非自启动
@@ -256,7 +249,7 @@
     		});
 		});
 	</script>
-	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>    
+	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"></span></a>
 </body>
 <script type="text/javascript" src="../../js/menu.js"></script>
 </html>

@@ -13,7 +13,7 @@
     $('#sliderTV').sliderTV();
     // at first focus on the fifth item sliding the carousel,
     // notice canAnimate: false, which prevents the animation after initialization
-    $('#sliderTV').trigger('move:jump', { to: 2, canAnimate: false });
+    $('#sliderTV').trigger('move:jump', { to: 0, canAnimate: false });
 
     // in your real world smart tv application you can listen to events from remote control,
     // in this demo we just listen to keypad arrow left and right
